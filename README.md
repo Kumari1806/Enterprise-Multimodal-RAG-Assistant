@@ -197,15 +197,42 @@ Authorization: Bearer <token>
 
 ## 📸 Application Screenshots
 
-The `screenshots/` directory contains screenshots demonstrating the application's main functionality, including:
+The following screenshots demonstrate the application's key workflows, security controls, and enterprise RAG capabilities.
 
-- Login interface
-- Employee chat experience
-- Role-based access control
-- Document access
-- Prompt-injection protection
-- Insufficient-information handling
-- Evaluation dashboard
+### 🔐 Login Interface
+Secure authentication interface for employees and administrators using role-based credentials.
+
+![Login Interface](screenshots/login_screen.png)
+
+### 💬 Employee Chat Experience
+Employees can query authorized organizational documents and receive grounded answers with source citations.
+
+![Employee Chat](screenshots/employee_chat.png)
+
+### 📄 Document Access
+Displays documents available to the authenticated user based on their assigned role and permissions.
+
+![Document Access](screenshots/documents_page.png)
+
+### 🛡️ Role-Based Access Control
+Unauthorized document or information requests are blocked according to the user's role and access scope.
+
+![RBAC Blocked](screenshots/rbac_blocked.png)
+
+### 🚨 Prompt-Injection Protection
+Malicious prompt-injection attempts are detected and blocked before reaching the retrieval pipeline.
+
+![Prompt Injection Protection](screenshots/prompt_injection.png)
+
+### 🎯 Insufficient-Information Handling
+When the required information is not available in authorized documents, the system avoids hallucination and clearly indicates insufficient information.
+
+![Insufficient Information](screenshots/insufficient_info.png)
+
+### 📊 AI Evaluation Dashboard
+Provides an evaluation view showing the system's performance across correctness, security, RBAC, and grounded-answering scenarios.
+
+![Evaluation Dashboard](screenshots/evaluation_dashboard.png)
 
 ---
 
